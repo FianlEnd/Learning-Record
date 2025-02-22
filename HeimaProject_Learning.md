@@ -1,10 +1,11 @@
-# **Maven**
+# **java后端学习**
 
-## 依赖管理
+## Maven
+### 依赖管理
 在maven的pom.xml文件中添加配置 
-## 项目构建 
+### 项目构建 
 maven提供了一套简单命令进行项目构建，能很容易完成 编译(compile),测试(test),打包(package),发布(deploy) 的操作，并且支持跨平台。
-## 统一项目结构
+### 统一项目结构
 提供了标准java项目目录
 ```
 maven-project01
@@ -17,7 +18,7 @@ maven-project01
                         |--- resources (测试代码配置文件目录)
         |--- target (编译、打包生成文件存放目录)
 ```
-## 生命周期
+### 生命周期
 - clean：清理工作。
 - default：核心工作。如：编译、测试、打包、安装、部署等。
 - site：生成报告、发布站点等。
@@ -25,7 +26,7 @@ maven-project01
 - 生命周期的顺序：clean --> validate --> compile --> test --> package --> verify --> install --> site --> deploy
 - 比较关注的：clean -->  compile --> test --> package  --> install
 
-## 使用JUnit进行单元测试
+### 使用JUnit进行单元测试
 (Get的请求参数在请求行中，Post的请求参数在请求体中，Post请求安全性相对较高
 请求行，请求头，请求体，响应头，响应行，响应体  
 
@@ -37,14 +38,14 @@ maven-project01
 5xx	服务器端错误 --- 处理发生错误，责任在服务端，如：服务端抛出异常，路由出错，HTTP版本不支持等)
 
 
-# **三层架构**
+## 三层架构
 
 Controller: 接受请求，响应数据  
 Service: 逻辑处理   
 Dao: 数据访问
 
 
-# **软件设计原则：高内聚低耦合**
+## 软件设计原则：高内聚低耦合
 
 - 控制反转： Inversion Of Control，简称IOC。对象的创建控制权由程序自身转移到外部（容器），这种思想称为控制反转。
   - 对象的创建权由程序员主动创建转移到容器(由容器创建、管理对象)。这个容器称为：IOC容器或Spring容器。
