@@ -1,11 +1,11 @@
 # **java后端学习**
 
 ## Maven
-### 依赖管理
+### &emsp;&emsp;依赖管理
 在maven的pom.xml文件中添加配置 
-### 项目构建 
+### &emsp;&emsp;项目构建 
 maven提供了一套简单命令进行项目构建，能很容易完成 编译(compile),测试(test),打包(package),发布(deploy) 的操作，并且支持跨平台。
-### 统一项目结构
+### &emsp;&emsp;统一项目结构
 提供了标准java项目目录
 ```
 maven-project01
@@ -18,7 +18,7 @@ maven-project01
                         |--- resources (测试代码配置文件目录)
         |--- target (编译、打包生成文件存放目录)
 ```
-### 生命周期
+### &emsp;&emsp;生命周期
 - clean：清理工作。
 - default：核心工作。如：编译、测试、打包、安装、部署等。
 - site：生成报告、发布站点等。
@@ -26,7 +26,7 @@ maven-project01
 - 生命周期的顺序：clean --> validate --> compile --> test --> package --> verify --> install --> site --> deploy
 - 比较关注的：clean -->  compile --> test --> package  --> install
 
-### 使用JUnit进行单元测试
+### &emsp;&emsp;使用JUnit进行单元测试
 (Get的请求参数在请求行中，Post的请求参数在请求体中，Post请求安全性相对较高
 请求行，请求头，请求体，响应头，响应行，响应体  
 
