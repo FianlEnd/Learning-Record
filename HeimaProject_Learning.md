@@ -19,22 +19,27 @@ maven-project01
         |--- target (编译、打包生成文件存放目录)
 ```
 ### &emsp;&emsp;生命周期
-&emsp;&emsp;- clean：清理工作。
-&emsp;&emsp;- default：核心工作。如：编译、测试、打包、安装、部署等。
-&emsp;&emsp;- site：生成报告、发布站点等。
-
-&emsp;&emsp;- 生命周期的顺序：clean --> validate --> compile --> test --> package --> verify --> install --> site --> deploy
-&emsp;&emsp;- 比较关注的：clean -->  compile --> test --> package  --> install
+- clean：清理工作。
+- default：核心工作。如：编译、测试、打包、安装、部署等。
+- site：生成报告、发布站点等。
+- 生命周期的顺序：clean --> validate --> compile --> test --> package --> verify --> install --> site --> deploy
+- 比较关注的：clean -->  compile --> test --> package  --> install
 
 ### &emsp;&emsp;使用JUnit进行单元测试
 &emsp;&emsp;(Get的请求参数在请求行中，Post的请求参数在请求体中，Post请求安全性相对较高
+
 &emsp;&emsp;请求行，请求头，请求体，响应头，响应行，响应体  
 
 &emsp;&emsp;响应码：
+
 &emsp;&emsp;1xx	响应中 --- 临时状态码。表示请求已经接受，告诉客户端应该继续请求或者如果已经完成则忽略
+
 &emsp;&emsp;2xx	成功 --- 表示请求已经被成功接收，处理已完成
+
 &emsp;&emsp;3xx	重定向 --- 重定向到其它地方，让客户端再发起一个请求以完成整个处理
+
 &emsp;&emsp;4xx	客户端错误 --- 处理发生错误，责任在客户端，如：客户端的请求一个不存在的资源，客户端未被授权，禁止访问等
+
 &emsp;&emsp;5xx	服务器端错误 --- 处理发生错误，责任在服务端，如：服务端抛出异常，路由出错，HTTP版本不支持等)
 
 
