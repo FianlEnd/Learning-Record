@@ -1,4 +1,5 @@
 # **子串**
+***
 ## **最大子数组和**
 
 ```
@@ -16,7 +17,7 @@ public:
     }
 };
 ```
-
+***
 ## **最大波动子串**
 
 ```
@@ -72,3 +73,29 @@ public:
     }
 };
 ```
+***
+## **给你一个整数数组 nums 和一个整数 k ，请你统计并返回 该数组中和为 k 的子数组的个数**
+```
+//子数组是数组中元素的连续非空序列
+//两个前缀和之差就是这部分子数组的和
+class Solution {
+public:
+    int subarraySum(vector<int>& nums, int k) {
+        int n = nums.size();
+        vector<int> s(n + 1);
+        for (int i = 0; i < n; i++) {
+            s[i + 1] = s[i] + nums[i];
+        }
+
+        int ans = 0;
+        unordered_map<int, int> cnt;
+        for (int sj : s) {
+            // 注意不要直接 += cnt[sj-k]，如果 sj-k 不存在，会插入 sj-k
+            ans += cnt.contains(sj - k) ? cnt[sj - k] : 0;
+            cnt[sj]++;
+        }
+        return ans;
+    }
+};
+```
+***

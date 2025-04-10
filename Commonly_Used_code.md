@@ -1,5 +1,6 @@
 # 记录一些常用的代码
 （一段时间不用经常忘记）
+***
 ## github相关
 ```
 //配置用户信息
@@ -43,7 +44,10 @@ git add -u newfolder (-u选项会更新已经追踪的文件和文件夹)
 git commit -m \"修改文件名\"
 git push origin master
 ```
+***
 ## Linux相关
 ```
 xvfb-run qq --no-sandbox //前台启动napcat
 ```
+***
+

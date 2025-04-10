@@ -1,5 +1,5 @@
 # **java后端学习**
-
+***
 ## Maven
 ### &emsp;&emsp;依赖管理
 &emsp;&emsp;在maven的pom.xml文件中添加配置 
@@ -42,13 +42,13 @@ maven-project01
 
 &emsp;&emsp;5xx	服务器端错误 --- 处理发生错误，责任在服务端，如：服务端抛出异常，路由出错，HTTP版本不支持等)
 
-
+***
 ## 三层架构
 
 Controller: 接受请求，响应数据  
 Service: 逻辑处理   
 Dao: 数据访问
-
+***
 
 ## 软件设计原则：高内聚低耦合
 
@@ -131,4 +131,23 @@ public class UserController {
     private UserService userService;}
 ```
 
+***
+## **原理篇**
+- 自动配置
+   
+  @ConditionalOnMissingBean: 判断环境中有没有对应的bean(类型或名称),才注入到IOC容器
+  
+  @ConditionalOnClass: 判断环境中是否有对应的字节码文件，才注册bean到IOC容器 
 
+  @ConditionalOnProperty: 判断配置文件中有对应属性和值，才注册bean到IOC容器
+- 
+***
+## ** **
+
+***
+## ** **
+
+***
+## ** **
+
+***
