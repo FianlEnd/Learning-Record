@@ -3,6 +3,10 @@
 ## **小记**
 ```
 //multiset<int> s和集合区别是可以有重复值
+//int a=stoi("123")
+//string的一些操作，如starts_with()
+//递归的灵活使用
+https://leetcode.cn/problems/binary-tree-right-side-view/solutions/2015061/ru-he-ling-huo-yun-yong-di-gui-lai-kan-s-r1nc/?envType=study-plan-v2&envId=top-100-liked
 ```
 ***
 ## **欧拉法检索素数**
@@ -53,6 +57,7 @@ https://leetcode.cn/problems/maximum-or/description/
 ***
 ## **判断一个含左右括号的字符串是否有效**
 ```
+//子序列和子串意思不一样
 //含有可以改变的字符，从左到右，是左括号就加一，右括号就减一，不确定就加一和减一
 //数学归纳法得出每次结果集合都是连续的偶数或奇数
 //然后每次只看结果的最大和最小，最后结果最小是0则满足题意
@@ -64,5 +69,11 @@ https://leetcode.cn/problems/check-if-a-parentheses-string-can-be-valid/descript
 ```
 (思路想到就很简单)
 https://leetcode.cn/problems/minimum-cost-to-make-all-characters-equal/description
+```
+***
+
+## **前缀和数组的表示方法**
+```
+//例如s[r]−s[l]就能表示r到l中1的数目（s[n]统计0到n的1数目）
 ```
 ***

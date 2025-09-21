@@ -21,6 +21,9 @@ ssh-keygen -C "comment备注" //(生成密钥对)进入用户家目录的 .ssh �
 
 //提交推送
 
+<!-- 如果你觉得 git add 提交缓存的流程太过繁琐，Git 也允许你用 -a 选项跳过这一步。命令格式如下： -->
+git commit -a
+
 git add . //提交所有修改的和新建的数据暂存区
 git add -u 
 git add –update//提交所有被删除和修改的文件到数据暂存区
@@ -29,6 +32,13 @@ git add –all//提交所有被删除、被替换、被修改和新增的文件�
 git status//查看状态
 git commit -m "input yours message"//提交文件更改
 git push -u origin main//推送到main分支
+
+
+# 创建并切换到 main 分支
+git checkout -b main
+# 推送 main 分支到远程，并设置追踪关系
+git push -u origin main
+
 
 //删除仓库中文件
 
@@ -50,4 +60,18 @@ git push origin master
 xvfb-run qq --no-sandbox //前台启动napcat
 ```
 ***
-
+```
+top      //查看系统负载(动态)
+ps aux  //查看所有进程
+ps aux | grep "name" //查看指定进程
+screen -S "name"
+screen -r "name"//恢复指定编号或名称的视窗任务
+screen -X -S "name" quit
+screen ls
+ctrl + a + d//暂时离开当前视窗
+ctrl + a + k//关闭当前视窗
+```
+## Others
+```
+redis-server.exe //windows启动redis
+```
